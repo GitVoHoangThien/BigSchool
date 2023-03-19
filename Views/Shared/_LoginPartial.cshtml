@@ -7,9 +7,16 @@
 
     <ul class="navbar-nav navbar-right">
         <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdow" role="button" aria-haspopup="true" aria-
+               expanded="false" >@User.Identity.GetUserName() <span class="caret"></span> "</a>
+            <ul class="dropdrow">
+                <li><a href="#">Course i'm going</a></li>
+                <li><a href="#">Lecture I'm Following</a></li>
+                
+            </ul>
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class="nav-link" })
         </li>
-        <li><a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+        <li><a href="javaspcript:document.getElemenById('logoutFrom').submit()"></a>Log off</li>
     </ul>
     }
 }
