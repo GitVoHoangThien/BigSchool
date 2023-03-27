@@ -6,16 +6,16 @@
     @Html.AntiForgeryToken()
 
     <ul class="navbar-nav navbar-right">
-        <li>
+            <li>
             <a href="#" class="dropdown-toggle" data-toggle="dropdow" role="button" aria-haspopup="true" aria-
                expanded="false" >@User.Identity.GetUserName() <span class="caret"></span> "</a>
             <ul class="dropdrow">
                 <li><a href="#">Course i'm going</a></li>
                 <li><a href="#">Lecture I'm Following</a></li>
-                
+                <li><a href="margin-left: 15px" hreflang=" javascript:document.getElemenById('logoutForm').summit()">Log off</a></li>
             </ul>
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class="nav-link" })
-        </li>
+            </li>
         <li><a href="javaspcript:document.getElemenById('logoutFrom').submit()"></a>Log off</li>
     </ul>
     }
